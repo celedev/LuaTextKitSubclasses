@@ -22,6 +22,11 @@
 		FD32FCD418FD07C700C14CE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD32FCB318FD07C700C14CE6 /* UIKit.framework */; };
 		FD32FCDC18FD07C700C14CE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCDA18FD07C700C14CE6 /* InfoPlist.strings */; };
 		FD32FCDE18FD07C700C14CE6 /* TextKitSubclassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCDD18FD07C700C14CE6 /* TextKitSubclassesTests.m */; };
+		FD32FCE918FD0F1800C14CE6 /* RoundTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCE818FD0F1800C14CE6 /* RoundTextContainer.m */; };
+		FD32FCEB18FD170300C14CE6 /* TexteMultilangue.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCEA18FD170300C14CE6 /* TexteMultilangue.rtf */; };
+		FD32FCEE18FD274A00C14CE6 /* CircleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCED18FD274A00C14CE6 /* CircleTextView.m */; };
+		FD32FCF018FD32EF00C14CE6 /* LigneDeTexte.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCEF18FD32EF00C14CE6 /* LigneDeTexte.rtf */; };
+		FD32FCF318FD441E00C14CE6 /* ColoringTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCF218FD441E00C14CE6 /* ColoringTextStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,14 @@
 		FD32FCD918FD07C700C14CE6 /* TextKitSubclassesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextKitSubclassesTests-Info.plist"; sourceTree = "<group>"; };
 		FD32FCDB18FD07C700C14CE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD32FCDD18FD07C700C14CE6 /* TextKitSubclassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextKitSubclassesTests.m; sourceTree = "<group>"; };
+		FD32FCE718FD0F1800C14CE6 /* RoundTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundTextContainer.h; sourceTree = "<group>"; };
+		FD32FCE818FD0F1800C14CE6 /* RoundTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundTextContainer.m; sourceTree = "<group>"; };
+		FD32FCEA18FD170300C14CE6 /* TexteMultilangue.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = TexteMultilangue.rtf; sourceTree = "<group>"; };
+		FD32FCEC18FD274A00C14CE6 /* CircleTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTextView.h; sourceTree = "<group>"; };
+		FD32FCED18FD274A00C14CE6 /* CircleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTextView.m; sourceTree = "<group>"; };
+		FD32FCEF18FD32EF00C14CE6 /* LigneDeTexte.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = LigneDeTexte.rtf; sourceTree = "<group>"; };
+		FD32FCF118FD441E00C14CE6 /* ColoringTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoringTextStorage.h; sourceTree = "<group>"; };
+		FD32FCF218FD441E00C14CE6 /* ColoringTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoringTextStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +133,14 @@
 				FD32FCC418FD07C700C14CE6 /* Main_iPad.storyboard */,
 				FD32FCC718FD07C700C14CE6 /* ViewController.h */,
 				FD32FCC818FD07C700C14CE6 /* ViewController.m */,
+				FD32FCF118FD441E00C14CE6 /* ColoringTextStorage.h */,
+				FD32FCF218FD441E00C14CE6 /* ColoringTextStorage.m */,
+				FD32FCE718FD0F1800C14CE6 /* RoundTextContainer.h */,
+				FD32FCE818FD0F1800C14CE6 /* RoundTextContainer.m */,
+				FD32FCEC18FD274A00C14CE6 /* CircleTextView.h */,
+				FD32FCED18FD274A00C14CE6 /* CircleTextView.m */,
+				FD32FCEA18FD170300C14CE6 /* TexteMultilangue.rtf */,
+				FD32FCEF18FD32EF00C14CE6 /* LigneDeTexte.rtf */,
 				FD32FCCA18FD07C700C14CE6 /* Images.xcassets */,
 				FD32FCB618FD07C700C14CE6 /* Supporting Files */,
 			);
@@ -230,9 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD32FCEB18FD170300C14CE6 /* TexteMultilangue.rtf in Resources */,
 				FD32FCC618FD07C700C14CE6 /* Main_iPad.storyboard in Resources */,
 				FD32FCCB18FD07C700C14CE6 /* Images.xcassets in Resources */,
 				FD32FCC318FD07C700C14CE6 /* Main_iPhone.storyboard in Resources */,
+				FD32FCF018FD32EF00C14CE6 /* LigneDeTexte.rtf in Resources */,
 				FD32FCBA18FD07C700C14CE6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD32FCC918FD07C700C14CE6 /* ViewController.m in Sources */,
+				FD32FCF318FD441E00C14CE6 /* ColoringTextStorage.m in Sources */,
+				FD32FCEE18FD274A00C14CE6 /* CircleTextView.m in Sources */,
 				FD32FCC018FD07C700C14CE6 /* AppDelegate.m in Sources */,
 				FD32FCBC18FD07C700C14CE6 /* main.m in Sources */,
+				FD32FCE918FD0F1800C14CE6 /* RoundTextContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

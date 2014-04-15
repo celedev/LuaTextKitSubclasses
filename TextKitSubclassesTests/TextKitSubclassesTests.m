@@ -2,7 +2,7 @@
 //  TextKitSubclassesTests.m
 //  TextKitSubclassesTests
 //
-//  Created by Jean-Luc on 15/04/2014.
+//  Created by Jean-Luc Jumpertz on 15/04/2014.
 //
 //
 
