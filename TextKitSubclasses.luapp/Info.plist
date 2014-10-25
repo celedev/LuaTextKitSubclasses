@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Program Bindings Libs</key>
+	<array>
+		<dict>
+			<key>LibBookmark</key>
+			<data>
+			Ym9va0AEAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAPAMAAAUAAAABAQAAVXNlcnMAAAAIAAAAAQEAAGpl
+			YW4tbHVjBwAAAAEBAABMaWJyYXJ5ABMAAAABAQAAQXBwbGljYXRp
+			b24gU3VwcG9ydAAUAAAAAQEAAGNvbS5jZWxlZGV2LkNvZGVGbG93
+			CAAAAAEBAABpcGhvbmVvcxcAAAABAQAAaU9TLTguMC1TREsubHVh
+			YmluZGluZ3MAHAAAAAEGAAAEAAAAFAAAACQAAAA0AAAAUAAAAGwA
+			AAB8AAAACAAAAAQDAAB8ZAIAAAAAAAgAAAAEAwAAw3tOAAAAAAAI
+			AAAABAMAADh8TgAAAAAACAAAAAQDAAA+fE4AAAAAAAgAAAAEAwAA
+			WmJUAAAAAAAIAAAABAMAAFxiVAAAAAAACAAAAAQDAADkC5EAAAAA
+			ABwAAAABBgAAwAAAANAAAADgAAAA8AAAAAABAAAQAQAAIAEAAAgA
+			AAAABAAAQbnUFKQAAAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAA
+			AAAAAAAAAAgAAAAEAwAABQAAAAAAAAAEAAAAAwMAAPcBAAAMAAAA
+			AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAAAGzgMBAAAIAAAAAAQA
+			AEG4Iv/AAAAAJAAAAAEBAAAxQkIzNEI4QS03RjU5LTNDMjktOUJB
+			OS0yMTNBRTg0OTM4NkUYAAAAAQIAAIEAAAABAAgA7xcAAAEACAAA
+			AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMDAAAAAwAA
+			8gAAAAECAABmYmJhNWJmNzlhZTdiNTFmYjk3ZTRhYjdlNmYyNzQy
+			OTAyYWIzYTFjOzAwMDAwMDAwOzAwMDAwMDAwOzAwMDAwMDAwMDAw
+			MDAwMjA7Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7
+			MDAwMDAwMDE7MDEwMDAwMDg7MDAwMDAwMDAwMDkxMGJlNDsvdXNl
+			cnMvamVhbi1sdWMvbGlicmFyeS9hcHBsaWNhdGlvbiBzdXBwb3J0
+			L2NvbS5jZWxlZGV2LmNvZGVmbG93L2lwaG9uZW9zL2lvcy04LjAt
+			c2RrLmx1YWJpbmRpbmdzAAAAzAAAAP7///8BAAAAAAAAABAAAAAE
+			EAAAnAAAAAAAAAAFEAAAMAEAAAAAAAAQEAAAZAEAAAAAAABAEAAA
+			VAEAAAAAAAACIAAAIAIAAAAAAAAQIAAAoAEAAAAAAAARIAAA1AEA
+			AAAAAAASIAAAtAEAAAAAAAATIAAAxAEAAAAAAAAgIAAAAAIAAAAA
+			AAAwIAAALAIAAAAAAAABwAAAhAEAAAAAAAARwAAAFAAAAAAAAAAS
+			wAAAlAEAAAAAAAAQ0AAANAIAAAAAAACA8AAAQAIAAAAAAAA=
+			</data>
+			<key>LibDirPath</key>
+			<string>iphoneos</string>
+			<key>LibId</key>
+			<string>apple_sdk_iphoneos8.0</string>
+			<key>LibName</key>
+			<string>iOS</string>
+			<key>LibUrl</key>
+			<string>file:///Users/jean-luc/Library/Application%20Support/com.celedev.CodeFlow/iphoneos/iOS-8.0-SDK.luabindings/</string>
+		</dict>
+	</array>
+	<key>Program Display Info</key>
+	<dict>
+		<key>LuaAppDocument remote Lua service</key>
+		<string>TextKitSubclasses - TextKitController (iPad de Jean-Luc)</string>
+		<key>LuaAppDocument-associatedXodeProject</key>
+		<dict>
+			<key>platform</key>
+			<string>iphoneos</string>
+			<key>project</key>
+			<string>TextKitSubclasses.xcodeproj</string>
+			<key>target</key>
+			<string>TextKitSubclasses</string>
+		</dict>
+		<key>LuaAppWindow edited source path</key>
+		<string>RoundTextContainer</string>
+		<key>LuaAppWindow frame</key>
+		<string>903 429 1336 827 0 0 2560 1418 </string>
+	</dict>
+	<key>Program Format Version</key>
+	<string>0.9</string>
+	<key>Program Groups Order</key>
+	<dict>
+		<key></key>
+		<array>
+			<string>ViewController</string>
+			<string>RoundTextContainer</string>
+			<string>ColoringTextStorage</string>
+			<string>CircleTextView</string>
+		</array>
+	</dict>
+	<key>Program Source Files Info</key>
+	<dict>
+		<key></key>
+		<dict>
+			<key>RootGroupId</key>
+			<string>SourceFile</string>
+			<key>SourceItemDisplayInfo</key>
+			<dict>
+				<key>ListController Group IsExpanded</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>CircleTextView</key>
+		<dict>
+			<key>Source File Auto Reload</key>
+			<true/>
+			<key>Source File Is Start Item</key>
+			<false/>
+			<key>Source File Name</key>
+			<string>CircleTextView</string>
+			<key>SourceItemChangeTime</key>
+			<real>433374764.78501201</real>
+			<key>SourceItemDisplayInfo</key>
+			<dict>
+				<key>SrcEditor Selected Length</key>
+				<integer>1</integer>
+				<key>SrcEditor Selected Location</key>
+				<integer>2252</integer>
+				<key>SrcEditor Visible Length</key>
+				<integer>990</integer>
+				<key>SrcEditor Visible Location</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<key>ColoringTextStorage</key>
+		<dict>
+			<key>Source File Auto Reload</key>
+			<true/>
+			<key>Source File Is Start Item</key>
+			<false/>
+			<key>Source File Name</key>
+			<string>ColoringTextStorage</string>
+			<key>SourceItemChangeTime</key>
+			<real>422373718.39260203</real>
+			<key>SourceItemDisplayInfo</key>
+			<dict>
+				<key>SrcEditor Selected Length</key>
+				<integer>0</integer>
+				<key>SrcEditor Selected Location</key>
+				<integer>1</integer>
+				<key>SrcEditor Visible Length</key>
+				<integer>1965</integer>
+				<key>SrcEditor Visible Location</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<key>RoundTextContainer</key>
+		<dict>
+			<key>Source File Auto Reload</key>
+			<true/>
+			<key>Source File Is Start Item</key>
+			<false/>
+			<key>Source File Name</key>
+			<string>RoundTextContainer</string>
+			<key>SourceItemChangeTime</key>
+			<real>433377509.82055402</real>
+			<key>SourceItemDisplayInfo</key>
+			<dict>
+				<key>SrcEditor Selected Length</key>
+				<integer>0</integer>
+				<key>SrcEditor Selected Location</key>
+				<integer>1323</integer>
+				<key>SrcEditor Visible Length</key>
+				<integer>1597</integer>
+				<key>SrcEditor Visible Location</key>
+				<integer>402</integer>
+			</dict>
+		</dict>
+		<key>ViewController</key>
+		<dict>
+			<key>Source File Auto Reload</key>
+			<true/>
+			<key>Source File Is Start Item</key>
+			<false/>
+			<key>Source File Name</key>
+			<string>ViewController</string>
+			<key>SourceItemChangeTime</key>
+			<real>422371869.55117399</real>
+			<key>SourceItemDisplayInfo</key>
+			<dict>
+				<key>SrcEditor Selected Length</key>
+				<integer>0</integer>
+				<key>SrcEditor Selected Location</key>
+				<integer>0</integer>
+				<key>SrcEditor Visible Length</key>
+				<integer>1618</integer>
+				<key>SrcEditor Visible Location</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -11,10 +11,9 @@
 NSString *const TKDDefaultTokenName = @"TKDDefaultTokenName";
 
 @interface ColoringTextStorage ()
-{
-    NSMutableAttributedString *_backingStore;
-    BOOL _dynamicTextNeedsUpdate;
-}
+
+@property NSMutableAttributedString* backingStore;
+@property (readonly) BOOL dynamicTextNeedsUpdate;
 
 @end
 
@@ -46,7 +45,7 @@ NSString *const TKDDefaultTokenName = @"TKDDefaultTokenName";
 - (void)replaceCharactersInRange:(NSRange)range withString:(NSString *)str
 {
     [_backingStore replaceCharactersInRange:range withString:str];
-    [self edited:NSTextStorageEditedCharacters|NSTextStorageEditedAttributes range:range changeInLength:str.length - range.length];
+    [self edited:NSTextStorageEditedCharacters range:range changeInLength:str.length - range.length];
     _dynamicTextNeedsUpdate = YES;
 }
 
@@ -54,48 +53,6 @@ NSString *const TKDDefaultTokenName = @"TKDDefaultTokenName";
 {
     [_backingStore setAttributes:attrs range:range];
     [self edited:NSTextStorageEditedAttributes range:range changeInLength:0];
-}
-
-// Define custom behavior for this NSTextStorage
-
--(void)processEditing
-{
-    if(_dynamicTextNeedsUpdate)
-    {
-        _dynamicTextNeedsUpdate = NO;
-        [self performReplacementsForCharacterChangeInRange:[self editedRange]];
-    }
-    [super processEditing];
-}
-
-// Internal methods
-
-- (void)performReplacementsForCharacterChangeInRange:(NSRange)changedRange
-{
-    if (_tokensAttributes != nil)
-    {
-        NSRange extendedRange = NSUnionRange(changedRange, [[_backingStore string] lineRangeForRange:NSMakeRange(changedRange.location, 0)]);
-        extendedRange = NSUnionRange(changedRange, [[_backingStore string] lineRangeForRange:NSMakeRange(NSMaxRange(changedRange), 0)]);
-        
-        NSDictionary *defaultAttributes = self.tokensAttributes [TKDDefaultTokenName];
-        
-        [[_backingStore string] enumerateSubstringsInRange:extendedRange options:NSStringEnumerationByWords usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
-            
-            NSDictionary *attributesForToken = self.tokensAttributes [substring];
-            if(!attributesForToken)
-                attributesForToken = defaultAttributes;
-            
-            if(attributesForToken)
-                [self addAttributes:attributesForToken range:substringRange];
-        }];
-    }
-}
-
-- (void) setTokensAttributes:(NSDictionary *)tokensAttributes
-{
-    _tokensAttributes = [tokensAttributes copy];
-    
-    [self performReplacementsForCharacterChangeInRange:NSMakeRange(0, _backingStore.length)];
 }
 
 @end

@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NSString *const TKDDefaultTokenName;
-
 @interface ColoringTextStorage : NSTextStorage
-
-@property (nonatomic, copy) NSDictionary *tokensAttributes;
 
 @end
