@@ -1,7 +1,6 @@
 -- Class RoundTextContainer
-local NsRange = require "Foundation.NSRange"
-local Cg = require "CoreGraphics.CGGeometry"
 
+local CGRect = struct.CGRect
 local NSTextContainer = objc.NSTextContainer
 local NSLayoutManager = objc.NSLayoutManager
 
@@ -42,14 +41,14 @@ function RoundTextContainer:lineFragmentRectForProposedRect_atIndex_writingDirec
         width = 0
     end
     
-    return Cg.CGRectMake (originX, baseFragmentRect.origin.y, width, baseFragmentRect.size.height), remainingRect
+    return CGRect(originX, baseFragmentRect.origin.y, width, baseFragmentRect.size.height), remainingRect
 end
 
 function RoundTextContainer:refresh ()
     
     local layoutManager = self.layoutManager
     
-    layoutManager:invalidateLayoutForCharacterRange_actualCharacterRange(NsRange.NSMakeRange(0, layoutManager.textStorage.length), nil)
+    layoutManager:invalidateLayoutForCharacterRange_actualCharacterRange(struct.NSRange(0, layoutManager.textStorage.length), nil)
     layoutManager:ensureLayoutForTextContainer(self)
 end
 

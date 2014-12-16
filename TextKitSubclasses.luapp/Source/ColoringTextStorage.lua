@@ -4,9 +4,9 @@ local UiKitAttributedStrings = require "UIKit.NSAttributedString"
 local NSForegroundColorAttributeName = UiKitAttributedStrings.NSForegroundColorAttributeName
 local NSBackgroundColorAttributeName = UiKitAttributedStrings.NSBackgroundColorAttributeName
 
+local NSRange = struct.NSRange
 local UIColor = objc.UIColor
 local NsString = require "Foundation.NSString"
-local NsRange = require "Foundation.NSRange"
 
 local defaultAttributesToken = "##default"
 
@@ -49,8 +49,8 @@ end
 
 function ColoringTextStorage:performReplacementsForCharactersInRange (changedRange)
     
-    local extendedRange = NsRange.NSUnionRange(changedRange, self.backingStore.string:lineRangeForRange (NsRange.NSMakeRange(changedRange.location, 0)))
-    extendedRange = NsRange.NSUnionRange(extendedRange, self.backingStore.string:lineRangeForRange (NsRange.NSMakeRange(NsRange.NSMaxRange(changedRange), 0)))
+    local extendedRange = changedRange:unionWithRange (self.backingStore.string:lineRangeForRange (NSRange(changedRange.location, 0)))
+    extendedRange = extendedRange:unionWithRange (self.backingStore.string:lineRangeForRange (NSRange(changedRange:maxLocation(), 0)))
     
     local defaultAttributes = tokenAttributes [defaultAttributesToken]
     
@@ -64,7 +64,7 @@ end
 
 function ColoringTextStorage:refresh()
     self:beginEditing()
-    self:performReplacementsForCharactersInRange(NsRange.NSMakeRange(0, self.backingStore.length))
+    self:performReplacementsForCharactersInRange(NSRange(0, self.backingStore.length))
     self:endEditing()
 end
 

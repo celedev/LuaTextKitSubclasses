@@ -1,6 +1,7 @@
 -- Class extension of native class ViewController
+require "NSRangeMethods"
 
-local Cg = require "CoreGraphics.CGGeometry"
+local CGRect = struct.CGRect
 local UiView = require "UIKit.UIView"
 
 local ColoringTextStorage = objc.ColoringTextStorage --[[@inherits NSTextStorage]]
@@ -27,10 +28,8 @@ function ViewController:viewDidLoad ()
     
     -- Create the Text Container and the Text View
     local textViewSize = math.min (self.view.bounds.size.width, self.view.bounds.size.height) * 0.8
-    local textViewFrame = Cg.CGRectMake (self.view.center.x - textViewSize / 2,
-                                         self.view.center.y - textViewSize / 2,
-                                         textViewSize, 
-                                         textViewSize)
+    local textViewFrame = CGRect (self.view.center.x - textViewSize / 2, self.view.center.y - textViewSize / 2,
+                                  textViewSize, textViewSize)
     local textContainer = RoundTextContainer:newWithSize(textViewFrame.size)
     layoutManager: addTextContainer (textContainer)
     
@@ -44,10 +43,8 @@ function ViewController:viewDidLoad ()
     
     -- Add a circle text view
     local circleViewSize = math.min(self.view.bounds.size.width, self.view.bounds.size.height)
-    local circleViewFrame = Cg.CGRectMake (self.view.center.x - circleViewSize / 2,
-                                           self.view.center.y - circleViewSize / 2,
-                                           circleViewSize, 
-                                           circleViewSize)
+    local circleViewFrame = CGRect (self.view.center.x - circleViewSize / 2, self.view.center.y - circleViewSize / 2,
+                                    circleViewSize, circleViewSize)
     local circleTextView = CircleTextView:newWithFrame(circleViewFrame)
     circleTextView.autoresizingMask = UiView.Autoresizing.FlexibleWidth + UiView.Autoresizing.FlexibleHeight
     circleTextView.translatesAutoresizingMaskIntoConstraints = true

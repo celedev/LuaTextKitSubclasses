@@ -8,12 +8,9 @@ local NSTextContainer = objc.NSTextContainer
 
 local UIColor = objc.UIColor
 
-local Cg = require "CoreGraphics.CGGeometry"
 local CgContext = require "CoreGraphics.CGContext"
 local CgAffineTransform = require "CoreGraphics.CGAffineTransform"
 local UiGraphics = require "UIKit.UIGraphics"
-
-local NsRange = require "Foundation.NSRange"
 
 local CircleTextView = class.createClass("CircleTextView", UIView)
 
@@ -40,7 +37,7 @@ function CircleTextView:setText (attributedString)
         textStorage:addLayoutManager(layoutManager)
         
         -- Create a text storage with a very large width
-        local textContainer = NSTextContainer:newWithSize(Cg.CGSizeMake(100000, 50))
+        local textContainer = NSTextContainer:newWithSize(struct.CGSize(100000, 50))
         layoutManager:addTextContainer(textContainer)
         
         self.textContainer = textContainer
@@ -74,7 +71,7 @@ function CircleTextView:drawRect(rect)
         for repeatIndex = 1, 5 do
         
             -- Draw each glyph on the circle
-            for glyphIndex = glyphRange.location, NsRange.NSMaxRange(glyphRange) - 1 do
+            for glyphIndex = glyphRange.location, glyphRange:maxLocation() - 1 do
                 
                 local glyphLocation = self.layoutManager:locationForGlyphAtIndex(glyphIndex)
                 local distance = radius - glyphLocation.y
@@ -84,23 +81,22 @@ function CircleTextView:drawRect(rect)
                 distance = distance + glyphAngle * 5
                 
                 local transform = CgAffineTransform.Identity
-                transform = CgAffineTransform.Translate (transform, 
-                                                         radius + distance * math.sin(glyphAngle),
-                                                         radius + distance * math.cos(glyphAngle))
-                transform = CgAffineTransform.Rotate (transform, math.pi - glyphAngle)
+                transform = transform:translate (radius + distance * math.sin(glyphAngle),
+                                                 radius + distance * math.cos(glyphAngle))
+                transform = transform:rotate (math.pi - glyphAngle)
                 
                 CgContext.SaveGState(ctx)
                 CgContext.ConcatCTM(ctx, transform)
                 
-                self.layoutManager:drawGlyphsForGlyphRange_atPoint(NsRange.NSMakeRange(glyphIndex, 1), 
-                                                                   Cg.CGPointMake(-(lineRect.origin.x + glyphLocation.x),
+                self.layoutManager:drawGlyphsForGlyphRange_atPoint(struct.NSRange(glyphIndex, 1), 
+                                                                   struct.CGPoint(-(lineRect.origin.x + glyphLocation.x),
                                                                                   -(lineRect.origin.y + glyphLocation.y)))
                 
                 CgContext.RestoreGState(ctx)
             end
             
             local glyphsRect = self.layoutManager:boundingRectForGlyphRange_inTextContainer(glyphRange, self.textContainer)
-            startOffset = startOffset + Cg.CGRectGetMaxX(glyphsRect) * glyphsSpacingFactor + 20
+            startOffset = startOffset + glyphsRect:getMaxX() * glyphsSpacingFactor + 20
         end
     end
 end
