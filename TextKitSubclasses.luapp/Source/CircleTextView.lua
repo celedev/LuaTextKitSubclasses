@@ -16,16 +16,11 @@ local CircleTextView = class.createClass("CircleTextView", UIView)
 
 function CircleTextView:initWithFrame (frame)
     
-    self = self[UIView]:initWithFrame(frame)
+    self[UIView]:initWithFrame(frame)
+    self.opaque = false
+    self.userInteractionEnabled = false
     
-    if self ~= nil then
-        self.opaque = false
-        self.userInteractionEnabled = false
-        
-        self:addMessageHandler ("CircleTextView updated", "refresh")
-    end
-    
-    return self
+    self:addMessageHandler ("CircleTextView updated", "refresh")
 end
 
 function CircleTextView:setText (attributedString)

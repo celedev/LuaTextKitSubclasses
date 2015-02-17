@@ -27,15 +27,10 @@ local ColoringTextStorage = class.extendClass(objc.ColoringTextStorage --[[@inhe
 
 function ColoringTextStorage:init ()
     
-    self = self[NSTextStorage]:init()
+    self[NSTextStorage]:init()
+    self.backingStore = objc.NSMutableAttributedString:new()
     
-    if self then
-        self.backingStore = objc.NSMutableAttributedString:new()
-        
-        self:addMessageHandler("ColoringTextStorage updated", "refresh")
-    end
-    
-    return self
+    self:addMessageHandler("ColoringTextStorage updated", "refresh")
 end
 
 function ColoringTextStorage:processEditing()

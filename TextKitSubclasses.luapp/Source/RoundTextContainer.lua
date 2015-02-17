@@ -8,15 +8,10 @@ local RoundTextContainer = class.createClass ("RoundTextContainer", NSTextContai
 
 function RoundTextContainer:initWithSize (size)
     
-    self = self[NSTextContainer]:initWithSize (size)
+    self[NSTextContainer]:initWithSize (size)
     
-    if self ~= nil then
-        self.circleSize = size
-        
-        self:addMessageHandler ("RoundTextContainer updated", "refresh")
-    end
-    
-    return self
+    self.circleSize = size        
+    self:addMessageHandler ("RoundTextContainer updated", "refresh")
 end
 
 function RoundTextContainer:lineFragmentRectForProposedRect_atIndex_writingDirection_remainingRect (proposedRect, characterIndex, writingDirection)

@@ -13,8 +13,6 @@
 	</array>
 	<key>Program Display Info</key>
 	<dict>
-		<key>LuaAppDocument remote Lua service</key>
-		<string>TextKitSubclasses - TextKitController (Celedev's iPad)</string>
 		<key>LuaAppDocument-associatedXodeProject</key>
 		<dict>
 			<key>platform</key>
@@ -25,9 +23,9 @@
 			<string>TextKitSubclasses</string>
 		</dict>
 		<key>LuaAppWindow edited source path</key>
-		<string>RoundTextContainer</string>
+		<string>ViewController</string>
 		<key>LuaAppWindow frame</key>
-		<string>1060 418 1336 827 0 0 2560 1417 </string>
+		<string>71 345 1336 827 0 0 2560 1417 </string>
 	</dict>
 	<key>Program Format Version</key>
 	<string>0.9</string>
@@ -65,17 +63,17 @@
 			<key>Source File Name</key>
 			<string>CircleTextView</string>
 			<key>SourceItemChangeTime</key>
-			<real>440442925.502882</real>
+			<real>445856475.36160398</real>
 			<key>SourceItemDisplayInfo</key>
 			<dict>
 				<key>SrcEditor Selected Length</key>
 				<integer>0</integer>
 				<key>SrcEditor Selected Location</key>
-				<integer>2162</integer>
+				<integer>537</integer>
 				<key>SrcEditor Visible Length</key>
-				<integer>1774</integer>
+				<integer>1388</integer>
 				<key>SrcEditor Visible Location</key>
-				<integer>1406</integer>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>ColoringTextStorage</key>
@@ -87,17 +85,17 @@
 			<key>Source File Name</key>
 			<string>ColoringTextStorage</string>
 			<key>SourceItemChangeTime</key>
-			<real>440441106.34596401</real>
+			<real>445856384.63721901</real>
 			<key>SourceItemDisplayInfo</key>
 			<dict>
 				<key>SrcEditor Selected Length</key>
 				<integer>0</integer>
 				<key>SrcEditor Selected Location</key>
-				<integer>3054</integer>
+				<integer>1644</integer>
 				<key>SrcEditor Visible Length</key>
-				<integer>1840</integer>
+				<integer>1712</integer>
 				<key>SrcEditor Visible Location</key>
-				<integer>0</integer>
+				<integer>1402</integer>
 			</dict>
 		</dict>
 		<key>NSRangeMethods</key>
@@ -131,15 +129,15 @@
 			<key>Source File Name</key>
 			<string>RoundTextContainer</string>
 			<key>SourceItemChangeTime</key>
-			<real>440439175.20965803</real>
+			<real>445856333.23629099</real>
 			<key>SourceItemDisplayInfo</key>
 			<dict>
 				<key>SrcEditor Selected Length</key>
 				<integer>0</integer>
 				<key>SrcEditor Selected Location</key>
-				<integer>28</integer>
+				<integer>396</integer>
 				<key>SrcEditor Visible Length</key>
-				<integer>1770</integer>
+				<integer>1911</integer>
 				<key>SrcEditor Visible Location</key>
 				<integer>0</integer>
 			</dict>
@@ -161,7 +159,7 @@
 				<key>SrcEditor Selected Location</key>
 				<integer>0</integer>
 				<key>SrcEditor Visible Length</key>
-				<integer>1820</integer>
+				<integer>1855</integer>
 				<key>SrcEditor Visible Location</key>
 				<integer>0</integer>
 			</dict>
