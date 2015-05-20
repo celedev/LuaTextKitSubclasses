@@ -4,12 +4,12 @@ require "NSRangeMethods"
 local CGRect = struct.CGRect
 local UiView = require "UIKit.UIView"
 
-local ColoringTextStorage = objc.ColoringTextStorage --[[@inherits NSTextStorage]]
+local ColoringTextStorage = objc.ColoringTextStorage
 
 local RoundTextContainer = require "RoundTextContainer"
 local CircleTextView = require "CircleTextView"
 
-local ViewController = class.extendClass(objc.ViewController --[[@inherits UIViewController]])
+local ViewController = class.extendClass(objc.ViewController)
 
 local superclass = ViewController.superclass
 

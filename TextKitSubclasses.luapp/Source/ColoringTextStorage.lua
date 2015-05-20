@@ -23,7 +23,7 @@ local tokenAttributes = { ["text"] = { [NSForegroundColorAttributeName] = UIColo
 
 local NSTextStorage = objc.NSTextStorage
 
-local ColoringTextStorage = class.extendClass(objc.ColoringTextStorage --[[@inherits NSTextStorage]])
+local ColoringTextStorage = class.extendClass(objc.ColoringTextStorage)
 
 function ColoringTextStorage:init ()
     
