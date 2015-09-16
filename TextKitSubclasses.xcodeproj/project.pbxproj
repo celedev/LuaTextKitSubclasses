@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		15F884AC3EDC4A668EC0DB9C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9123CA54FF64102966645D6 /* MobileCoreServices.framework */; };
-		6919A14A0DDB590DA1B88438 /* libCIMLuaBindingCoreGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0DD851DAC5AAC71EEE9281 /* libCIMLuaBindingCoreGraphics.a */; };
+		699179E4201E9D478B46735D /* libCIMLuaBindingCoreGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB58F264CE666FF652BC91A2 /* libCIMLuaBindingCoreGraphics.a */; };
+		769CAE6D71C2B366C564C72B /* libCIMLuaBindingUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E718AF2964FD2A58050C02CA /* libCIMLuaBindingUIKit.a */; };
 		8D6F8D853C5B421BBB54AFD4 /* libCIMLuaDebugServerIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 874C44AB08414B89B6571401 /* libCIMLuaDebugServerIOS.a */; };
 		AECA81C0E043462BA4416202 /* libCIMLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBC01BC5B0B4AB6B661403B /* libCIMLua.a */; };
-		E1613EDA0185E4FF291FB03C /* libCIMLuaBindingUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AEB81AB12CB7546681545B /* libCIMLuaBindingUIKit.a */; };
-		ED392C08FB2D8216531B124B /* libCIMLuaBindingFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6498521AD610EDA22AF96C /* libCIMLuaBindingFoundation.a */; };
+		E9738941CB4D784B904E9C7D /* libCIMLuaBindingFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BC384E1BA96B9D47A71DAA /* libCIMLuaBindingFoundation.a */; };
 		FD32FCB018FD07C700C14CE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD32FCAF18FD07C700C14CE6 /* Foundation.framework */; };
 		FD32FCB218FD07C700C14CE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD32FCB118FD07C700C14CE6 /* CoreGraphics.framework */; };
 		FD32FCB418FD07C700C14CE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD32FCB318FD07C700C14CE6 /* UIKit.framework */; };
@@ -29,12 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E0DD851DAC5AAC71EEE9281 /* libCIMLuaBindingCoreGraphics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreGraphics.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-8.3-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreGraphics.a"; sourceTree = "<absolute>"; };
-		42AEB81AB12CB7546681545B /* libCIMLuaBindingUIKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingUIKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-8.3-SDK.luabindings/BindingLibs/libCIMLuaBindingUIKit.a"; sourceTree = "<absolute>"; };
+		03BC384E1BA96B9D47A71DAA /* libCIMLuaBindingFoundation.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingFoundation.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs/libCIMLuaBindingFoundation.a"; sourceTree = "<absolute>"; };
 		4FBC01BC5B0B4AB6B661403B /* libCIMLua.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLua.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/libCIMLua.a"; sourceTree = "<absolute>"; };
 		874C44AB08414B89B6571401 /* libCIMLuaDebugServerIOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaDebugServerIOS.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/libCIMLuaDebugServerIOS.a"; sourceTree = "<absolute>"; };
-		AB6498521AD610EDA22AF96C /* libCIMLuaBindingFoundation.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingFoundation.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-8.3-SDK.luabindings/BindingLibs/libCIMLuaBindingFoundation.a"; sourceTree = "<absolute>"; };
+		AB58F264CE666FF652BC91A2 /* libCIMLuaBindingCoreGraphics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreGraphics.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreGraphics.a"; sourceTree = "<absolute>"; };
 		C9123CA54FF64102966645D6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E718AF2964FD2A58050C02CA /* libCIMLuaBindingUIKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingUIKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs/libCIMLuaBindingUIKit.a"; sourceTree = "<absolute>"; };
 		FD32FCAC18FD07C700C14CE6 /* TextKitSubclasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextKitSubclasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD32FCAF18FD07C700C14CE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FD32FCB118FD07C700C14CE6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,9 +68,9 @@
 				15F884AC3EDC4A668EC0DB9C /* MobileCoreServices.framework in Frameworks */,
 				AECA81C0E043462BA4416202 /* libCIMLua.a in Frameworks */,
 				8D6F8D853C5B421BBB54AFD4 /* libCIMLuaDebugServerIOS.a in Frameworks */,
-				6919A14A0DDB590DA1B88438 /* libCIMLuaBindingCoreGraphics.a in Frameworks */,
-				ED392C08FB2D8216531B124B /* libCIMLuaBindingFoundation.a in Frameworks */,
-				E1613EDA0185E4FF291FB03C /* libCIMLuaBindingUIKit.a in Frameworks */,
+				769CAE6D71C2B366C564C72B /* libCIMLuaBindingUIKit.a in Frameworks */,
+				E9738941CB4D784B904E9C7D /* libCIMLuaBindingFoundation.a in Frameworks */,
+				699179E4201E9D478B46735D /* libCIMLuaBindingCoreGraphics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +104,9 @@
 				C9123CA54FF64102966645D6 /* MobileCoreServices.framework */,
 				4FBC01BC5B0B4AB6B661403B /* libCIMLua.a */,
 				874C44AB08414B89B6571401 /* libCIMLuaDebugServerIOS.a */,
-				3E0DD851DAC5AAC71EEE9281 /* libCIMLuaBindingCoreGraphics.a */,
-				AB6498521AD610EDA22AF96C /* libCIMLuaBindingFoundation.a */,
-				42AEB81AB12CB7546681545B /* libCIMLuaBindingUIKit.a */,
+				E718AF2964FD2A58050C02CA /* libCIMLuaBindingUIKit.a */,
+				03BC384E1BA96B9D47A71DAA /* libCIMLuaBindingFoundation.a */,
+				AB58F264CE666FF652BC91A2 /* libCIMLuaBindingCoreGraphics.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 				INFOPLIST_FILE = "TextKitSubclasses/TextKitSubclasses-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-8.3-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,7 +351,7 @@
 				INFOPLIST_FILE = "TextKitSubclasses/TextKitSubclasses-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-8.3-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

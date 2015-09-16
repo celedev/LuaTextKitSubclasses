@@ -50,7 +50,7 @@ function ColoringTextStorage:performReplacementsForCharactersInRange (changedRan
     local defaultAttributes = tokenAttributes [defaultAttributesToken]
     
     self.backingStore.string:enumerateSubstringsInRange_options_usingBlock
-                             (extendedRange, NsString.EnumerationOptions.ByWords,
+                             (extendedRange, NsString.Enumeration.ByWords,
                               function (substring, range, enclosingRange)
                                   local attributesForToken = tokenAttributes [substring:lowercaseString()] or defaultAttributes
                                   self:addAttributes_range(attributesForToken, range)

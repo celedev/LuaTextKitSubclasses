@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>LibId</key>
-			<string>apple_sdk_iphoneos8.3</string>
+			<string>apple_sdk_iphoneos9.0</string>
 			<key>LibName</key>
 			<string>iOS</string>
 		</dict>
@@ -14,12 +14,17 @@
 			<key>BindingsLibSourceGroupType</key>
 			<string>SelfGeneratedBindingsLib</string>
 			<key>CustomBindingsLibBindingsSourcePath</key>
-			<string>/Volumes/Brume/Celedev CodeFlow/CodeFlow Sample Applications/TextKitSubclasses/TextKitSubclasses.xcodeproj</string>
+			<string>TextKitSubclasses.xcodeproj</string>
+			<key>CustomBindingsLibCompilationOptions</key>
+			<array>
+				<string>-fembed-bitcode</string>
+			</array>
 			<key>CustomBindingsLibHeadersParsingOptions</key>
 			<array>
 				<string>-include</string>
 				<string>/Volumes/Brume/Celedev CodeFlow/CodeFlow Sample Applications/TextKitSubclasses/TextKitSubclasses/TextKitSubclasses-Prefix.pch</string>
 				<string>-fobjc-arc</string>
+				<string>-fmodules</string>
 			</array>
 			<key>CustomBindingsLibHeadersSearchPaths</key>
 			<array>
@@ -27,7 +32,9 @@
 				<string>$(USER_LIBRARY_DIR)/Application\ Support/com.celedev.CodeFlow/headers</string>
 			</array>
 			<key>CustomBindingsLibLastGenerationDate</key>
-			<date>2015-05-20T16:23:22Z</date>
+			<date>2015-09-16T12:31:20Z</date>
+			<key>CustomBindingsLibPlatformSdkName</key>
+			<string>iphoneos9.0</string>
 			<key>CustomBindingsLibSourceFilesTree</key>
 			<data>
 			YnBsaXN0MDDUAQIDBAUGjo9YJHZlcnNpb25YJG9iamVjdHNZJGFy
@@ -83,46 +90,6 @@
 				<key>targetType</key>
 				<string>com.apple.product-type.application</string>
 			</dict>
-			<key>LibBookmark</key>
-			<data>
-			Ym9va/QEAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAA5AMAAAQAAAADAwAAAAIAAAUAAAABAQAAVXNlcnMA
-			AAAIAAAAAQEAAGplYW4tbHVjBwAAAAEBAABMaWJyYXJ5AAYAAAAB
-			AQAAQ2FjaGVzAAAUAAAAAQEAAGNvbS5jZWxlZGV2LkNvZGVGbG93
-			CAAAAAEBAABQcm9ncmFtcyQAAAABAQAAQkRFQjhCQkEtQzQ0QS00
-			OEYxLTk3NTAtQUJENzA4OTUwRkQ3DAAAAAEBAABFeHRlcm5hbExp
-			YnMdAAAAAQEAAFRleHRLaXRTdWJjbGFzc2VzLmx1YWJpbmRpbmdz
-			AAAAJAAAAAEGAAAQAAAAIAAAADAAAABAAAAAUAAAAGwAAAB8AAAA
-			qAAAALwAAAAIAAAABAMAAHxkAgAAAAAACAAAAAQDAADDe04AAAAA
-			AAgAAAAEAwAAOHxOAAAAAAAIAAAABAMAAG58TgAAAAAACAAAAAQD
-			AADxT5ABAAAAAAgAAAAEAwAA93eQAQAAAAAIAAAABAMAAC+BkAEA
-			AAAACAAAAAQDAAAwgZABAAAAAAgAAAAEAwAAMYGQAQAAAAAkAAAA
-			AQYAABABAAAgAQAAMAEAAEABAABQAQAAYAEAAHABAACAAQAAkAEA
-			AAgAAAAABAAAQbsM7BQAAAAYAAAAAQIAAAIAAAAAAAAADwAAAAAA
-			AAAAAAAAAAAAAAgAAAAEAwAABwAAAAAAAAAEAAAAAwMAAPcBAAAI
-			AAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAA
-			BAMAAAAARqcDAQAACAAAAAAEAABBuCL/wAAAACQAAAABAQAAMUJC
-			MzRCOEEtN0Y1OS0zQzI5LTlCQTktMjEzQUU4NDkzODZFGAAAAAEC
-			AACBAAAAAQAIAO8XAAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAA
-			AAAAAQUAAB0BAAABAgAAMjJjMTYyNjEwNTBlMDM1MWNmYzIyOTA3
-			NTRhYWUzZjQzMzRhMTQ3NTswMDAwMDAwMDswMDAwMDAwMDswMDAw
-			MDAwMDAwMDAwMDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5yZWFk
-			LXdyaXRlOzAwMDAwMDAxOzAxMDAwMDA4OzAwMDAwMDAwMDE5MDgx
-			MzE7L3VzZXJzL2plYW4tbHVjL2xpYnJhcnkvY2FjaGVzL2NvbS5j
-			ZWxlZGV2LmNvZGVmbG93L3Byb2dyYW1zL2JkZWI4YmJhLWM0NGEt
-			NDhmMS05NzUwLWFiZDcwODk1MGZkNy9leHRlcm5hbGxpYnMvdGV4
-			dGtpdHN1YmNsYXNzZXMubHVhYmluZGluZ3MAAAAA2AAAAP7///8B
-			AAAAAAAAABEAAAAEEAAA5AAAAAAAAAAFEAAAoAEAAAAAAAAQEAAA
-			3AEAAAAAAABAEAAAzAEAAAAAAAACIAAAqAIAAAAAAAAFIAAAGAIA
-			AAAAAAAQIAAAKAIAAAAAAAARIAAAXAIAAAAAAAASIAAAPAIAAAAA
-			AAATIAAATAIAAAAAAAAgIAAAiAIAAAAAAAAwIAAAtAIAAAAAAAAB
-			wAAA/AEAAAAAAAARwAAAIAAAAAAAAAASwAAADAIAAAAAAAAQ0AAA
-			BAAAAAAAAACA8AAAvAIAAAAAAAA=
-			</data>
-			<key>LibName</key>
-			<string>TextKitSubclasses</string>
-			<key>LibUrl</key>
-			<string>file:///Users/jean-luc/Library/Caches/com.celedev.CodeFlow/Programs/BDEB8BBA-C44A-48F1-9750-ABD708950FD7/ExternalLibs/TextKitSubclasses.luabindings</string>
 		</dict>
 	</array>
 	<key>Program Display Info</key>
@@ -139,9 +106,9 @@
 			<string>com.apple.product-type.application</string>
 		</dict>
 		<key>LuaAppWindow edited source path</key>
-		<string>TextKitSubclasses</string>
+		<string>ViewController</string>
 		<key>LuaAppWindow frame</key>
-		<string>687 463 1336 827 0 0 2560 1417 </string>
+		<string>50 518 1336 827 0 0 2560 1417 </string>
 	</dict>
 	<key>Program Format Version</key>
 	<string>0.9</string>
@@ -174,10 +141,6 @@
 		<dict>
 			<key>Source File Auto Reload</key>
 			<true/>
-			<key>Source File Is Start Item</key>
-			<false/>
-			<key>Source File Name</key>
-			<string>CircleTextView</string>
 			<key>SourceItemChangeTime</key>
 			<real>445856475.36160398</real>
 			<key>SourceItemDisplayInfo</key>
@@ -196,32 +159,22 @@
 		<dict>
 			<key>Source File Auto Reload</key>
 			<true/>
-			<key>Source File Is Start Item</key>
-			<false/>
-			<key>Source File Name</key>
-			<string>ColoringTextStorage</string>
 			<key>SourceItemChangeTime</key>
-			<real>453831763.86092597</real>
+			<real>464099518.219558</real>
 			<key>SourceItemDisplayInfo</key>
 			<dict>
 				<key>SrcEditor Selected Length</key>
 				<integer>0</integer>
 				<key>SrcEditor Selected Location</key>
-				<integer>1473</integer>
+				<integer>2499</integer>
 				<key>SrcEditor Visible Length</key>
-				<integer>1910</integer>
+				<integer>1675</integer>
 				<key>SrcEditor Visible Location</key>
-				<integer>0</integer>
+				<integer>1402</integer>
 			</dict>
 		</dict>
 		<key>NSRangeMethods</key>
 		<dict>
-			<key>Source File Auto Reload</key>
-			<false/>
-			<key>Source File Is Start Item</key>
-			<false/>
-			<key>Source File Name</key>
-			<string>NSRangeMethods</string>
 			<key>SourceItemChangeTime</key>
 			<real>440440556.078951</real>
 			<key>SourceItemDisplayInfo</key>
@@ -240,10 +193,6 @@
 		<dict>
 			<key>Source File Auto Reload</key>
 			<true/>
-			<key>Source File Is Start Item</key>
-			<false/>
-			<key>Source File Name</key>
-			<string>RoundTextContainer</string>
 			<key>SourceItemChangeTime</key>
 			<real>445856333.23629099</real>
 			<key>SourceItemDisplayInfo</key>
@@ -262,23 +211,8 @@
 		<dict>
 			<key>Source File Auto Reload</key>
 			<true/>
-			<key>Source File Is Start Item</key>
-			<false/>
-			<key>Source File Name</key>
-			<string>ViewController</string>
 			<key>SourceItemChangeTime</key>
 			<real>453831743.10898602</real>
-			<key>SourceItemDisplayInfo</key>
-			<dict>
-				<key>SrcEditor Selected Length</key>
-				<integer>0</integer>
-				<key>SrcEditor Selected Location</key>
-				<integer>410</integer>
-				<key>SrcEditor Visible Length</key>
-				<integer>1792</integer>
-				<key>SrcEditor Visible Location</key>
-				<integer>0</integer>
-			</dict>
 		</dict>
 	</dict>
 </dict>
