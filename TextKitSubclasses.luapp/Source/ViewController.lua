@@ -4,18 +4,24 @@ require "NSRangeMethods"
 local CGRect = struct.CGRect
 local UiView = require "UIKit.UIView"
 
-local ColoringTextStorage = objc.ColoringTextStorage
-
+local ColoringTextStorage = require "ColoringTextStorage"
 local RoundTextContainer = require "RoundTextContainer"
 local CircleTextView = require "CircleTextView"
 
 local ViewController = class.extendClass(objc.ViewController)
 
-local superclass = ViewController.superclass
-
 function ViewController:viewDidLoad ()
-    
-    self[superclass]:viewDidLoad()
+    self[ViewController.superclass]:viewDidLoad()
+    self:createTextViews()
+end
+
+function ViewController:promoteAsLuaObject()
+    if self.isViewLoaded then
+        self:createTextViews()
+    end
+end
+
+function ViewController:createTextViews()
     
     -- Create the NSTextStorage
     local textStorage = ColoringTextStorage:newWithFileURL_options_documentAttributes_error 
@@ -37,7 +43,6 @@ function ViewController:viewDidLoad ()
     textView.backgroundColor = objc.UIColor.whiteColor
     textView.autoresizingMask = UiView.Autoresizing.FlexibleWidth + UiView.Autoresizing.FlexibleHeight
     textView.translatesAutoresizingMaskIntoConstraints = true
-    
     self.view:addSubview (textView)
     self.textView = textView
     

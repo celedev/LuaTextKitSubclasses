@@ -6,7 +6,7 @@ TextKitSimpleLayout is mixed Lua + Objective-C application, containing class ext
 
 ## Configuration required
 
-A Mac with Celedev CodeFlow version 0.9.18 or greater installed.
+A Mac with Celedev CodeFlow version 0.9.19 or greater installed.
 
 Works on iPad (recommended) or iPhone, running iOS 7 or later.
 
