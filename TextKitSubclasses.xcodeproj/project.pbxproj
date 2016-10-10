@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15F884AC3EDC4A668EC0DB9C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9123CA54FF64102966645D6 /* MobileCoreServices.framework */; };
-		699179E4201E9D478B46735D /* libCIMLuaBindingCoreGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB58F264CE666FF652BC91A2 /* libCIMLuaBindingCoreGraphics.a */; };
-		769CAE6D71C2B366C564C72B /* libCIMLuaBindingUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E718AF2964FD2A58050C02CA /* libCIMLuaBindingUIKit.a */; };
-		8D6F8D853C5B421BBB54AFD4 /* libCIMLuaDebugServerIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 874C44AB08414B89B6571401 /* libCIMLuaDebugServerIOS.a */; };
-		AECA81C0E043462BA4416202 /* libCIMLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBC01BC5B0B4AB6B661403B /* libCIMLua.a */; };
-		E9738941CB4D784B904E9C7D /* libCIMLuaBindingFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BC384E1BA96B9D47A71DAA /* libCIMLuaBindingFoundation.a */; };
-		FD32FCB018FD07C700C14CE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD32FCAF18FD07C700C14CE6 /* Foundation.framework */; };
-		FD32FCB218FD07C700C14CE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD32FCB118FD07C700C14CE6 /* CoreGraphics.framework */; };
-		FD32FCB418FD07C700C14CE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD32FCB318FD07C700C14CE6 /* UIKit.framework */; };
+		03892FF6390C425940FE9CE4 /* libCIMLuaBindingUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF46F97C3D7EADF6A95A4F33 /* libCIMLuaBindingUIKit.a */; };
+		088E43D82F817A0A58C4BDC5 /* libCIMLuaBindingiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC65D9F4372B6BCC257E713 /* libCIMLuaBindingiOS.a */; };
+		114AB54E9876B7E48E4B306C /* libCIMLuaBindingTextKitSubclasses.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D945CA3FC84B083EF99E5287 /* libCIMLuaBindingTextKitSubclasses.a */; };
+		119FBEB6E4AF69441ECBD0E8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D7654307A0B7F1430E6DE1 /* ImageIO.framework */; };
+		394B8682788058B99FF18C14 /* libCIMLuaBindingCoreImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB4D535CDB052BB1A6BDCB5 /* libCIMLuaBindingCoreImage.a */; };
+		3B809C4EDECCCED2FA09ABD8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF562B0BCE3F29717B20F17 /* MobileCoreServices.framework */; };
+		5DA076FA0B5B52A7F99932CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F5B3E9E2E6F056DC63871 /* UIKit.framework */; };
+		62D7677D9EEF440FB2F4DD2B /* libCIMLuaBindingQuartzCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C9B53149C3D96A38551B62 /* libCIMLuaBindingQuartzCore.a */; };
+		6C8176D7CDDAFA82AA44720C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298C6FCF947B7C5F177BAF22 /* QuartzCore.framework */; };
+		74EA6F573DD80ED968674B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD97B7612EDB3B551BC5234A /* Foundation.framework */; };
+		7796B1C9625BF8077FCE16EC /* libCIMLuaBindingCoreGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA93AA6A37AAD13D751ED9BA /* libCIMLuaBindingCoreGraphics.a */; };
+		86A150993B804BA74FBB7C3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9146AFB6496BF8CE40385243 /* CoreGraphics.framework */; };
+		C0DC482FDE0A89AF714EEF23 /* libCIMLuaBindingFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A203273CC0E85DD6D3C2398 /* libCIMLuaBindingFoundation.a */; };
+		DDD42FD54C9C38C425E800CD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD6F4402F38069DC96755A6 /* CoreImage.framework */; };
+		E526A6644E02735F07A8C0EB /* libCIMLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB4BB3177E82E216FFC3458 /* libCIMLua.a */; };
 		FD32FCBA18FD07C700C14CE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCB818FD07C700C14CE6 /* InfoPlist.strings */; };
 		FD32FCBC18FD07C700C14CE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCBB18FD07C700C14CE6 /* main.m */; };
 		FD32FCC018FD07C700C14CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCBF18FD07C700C14CE6 /* AppDelegate.m */; };
@@ -23,22 +29,28 @@
 		FD32FCC618FD07C700C14CE6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCC418FD07C700C14CE6 /* Main_iPad.storyboard */; };
 		FD32FCC918FD07C700C14CE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCC818FD07C700C14CE6 /* ViewController.m */; };
 		FD32FCCB18FD07C700C14CE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCCA18FD07C700C14CE6 /* Images.xcassets */; };
-		FD32FCEB18FD170300C14CE6 /* TexteMultilangue.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCEA18FD170300C14CE6 /* TexteMultilangue.rtf */; };
-		FD32FCF018FD32EF00C14CE6 /* LigneDeTexte.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD32FCEF18FD32EF00C14CE6 /* LigneDeTexte.rtf */; };
 		FD32FCF318FD441E00C14CE6 /* ColoringTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD32FCF218FD441E00C14CE6 /* ColoringTextStorage.m */; };
+		FECA620E83C2187D2AE6F4D8 /* libCIMLuaDebugServerIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9B51D4FE93590E7CBB59F /* libCIMLuaDebugServerIOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03BC384E1BA96B9D47A71DAA /* libCIMLuaBindingFoundation.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingFoundation.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs/libCIMLuaBindingFoundation.a"; sourceTree = "<absolute>"; };
-		4FBC01BC5B0B4AB6B661403B /* libCIMLua.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLua.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/libCIMLua.a"; sourceTree = "<absolute>"; };
-		874C44AB08414B89B6571401 /* libCIMLuaDebugServerIOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaDebugServerIOS.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/libCIMLuaDebugServerIOS.a"; sourceTree = "<absolute>"; };
-		AB58F264CE666FF652BC91A2 /* libCIMLuaBindingCoreGraphics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreGraphics.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreGraphics.a"; sourceTree = "<absolute>"; };
-		C9123CA54FF64102966645D6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		E718AF2964FD2A58050C02CA /* libCIMLuaBindingUIKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingUIKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs/libCIMLuaBindingUIKit.a"; sourceTree = "<absolute>"; };
+		0CB4BB3177E82E216FFC3458 /* libCIMLua.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLua.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/libCIMLua.a"; sourceTree = "<absolute>"; };
+		0DF562B0BCE3F29717B20F17 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1CD6F4402F38069DC96755A6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1FB4D535CDB052BB1A6BDCB5 /* libCIMLuaBindingCoreImage.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreImage.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreImage.a"; sourceTree = "<absolute>"; };
+		23E9B51D4FE93590E7CBB59F /* libCIMLuaDebugServerIOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaDebugServerIOS.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/libCIMLuaDebugServerIOS.a"; sourceTree = "<absolute>"; };
+		298C6FCF947B7C5F177BAF22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		40C9B53149C3D96A38551B62 /* libCIMLuaBindingQuartzCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingQuartzCore.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs/libCIMLuaBindingQuartzCore.a"; sourceTree = "<absolute>"; };
+		4DC65D9F4372B6BCC257E713 /* libCIMLuaBindingiOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingiOS.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs/libCIMLuaBindingiOS.a"; sourceTree = "<absolute>"; };
+		7A203273CC0E85DD6D3C2398 /* libCIMLuaBindingFoundation.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingFoundation.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs/libCIMLuaBindingFoundation.a"; sourceTree = "<absolute>"; };
+		9146AFB6496BF8CE40385243 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD97B7612EDB3B551BC5234A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA93AA6A37AAD13D751ED9BA /* libCIMLuaBindingCoreGraphics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreGraphics.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreGraphics.a"; sourceTree = "<absolute>"; };
+		BF46F97C3D7EADF6A95A4F33 /* libCIMLuaBindingUIKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingUIKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs/libCIMLuaBindingUIKit.a"; sourceTree = "<absolute>"; };
+		D4D7654307A0B7F1430E6DE1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D945CA3FC84B083EF99E5287 /* libCIMLuaBindingTextKitSubclasses.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingTextKitSubclasses.a; path = "/Users/jean-luc/Library/Caches/com.celedev.CodeFlow/Programs/60DF6A9A-41BE-41D7-A432-C1650E3AECD4/ExternalLibs/TextKitSubclasses.luabindings/BindingLibs/libCIMLuaBindingTextKitSubclasses.a"; sourceTree = "<absolute>"; };
+		EF6F5B3E9E2E6F056DC63871 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD32FCAC18FD07C700C14CE6 /* TextKitSubclasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextKitSubclasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD32FCAF18FD07C700C14CE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FD32FCB118FD07C700C14CE6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FD32FCB318FD07C700C14CE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD32FCB718FD07C700C14CE6 /* TextKitSubclasses-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextKitSubclasses-Info.plist"; sourceTree = "<group>"; };
 		FD32FCB918FD07C700C14CE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD32FCBB18FD07C700C14CE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,9 +62,6 @@
 		FD32FCC718FD07C700C14CE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FD32FCC818FD07C700C14CE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD32FCCA18FD07C700C14CE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FD32FCD118FD07C700C14CE6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FD32FCEA18FD170300C14CE6 /* TexteMultilangue.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = TexteMultilangue.rtf; sourceTree = "<group>"; };
-		FD32FCEF18FD32EF00C14CE6 /* LigneDeTexte.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = LigneDeTexte.rtf; sourceTree = "<group>"; };
 		FD32FCF118FD441E00C14CE6 /* ColoringTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoringTextStorage.h; sourceTree = "<group>"; };
 		FD32FCF218FD441E00C14CE6 /* ColoringTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoringTextStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,15 +71,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD32FCB218FD07C700C14CE6 /* CoreGraphics.framework in Frameworks */,
-				FD32FCB418FD07C700C14CE6 /* UIKit.framework in Frameworks */,
-				FD32FCB018FD07C700C14CE6 /* Foundation.framework in Frameworks */,
-				15F884AC3EDC4A668EC0DB9C /* MobileCoreServices.framework in Frameworks */,
-				AECA81C0E043462BA4416202 /* libCIMLua.a in Frameworks */,
-				8D6F8D853C5B421BBB54AFD4 /* libCIMLuaDebugServerIOS.a in Frameworks */,
-				769CAE6D71C2B366C564C72B /* libCIMLuaBindingUIKit.a in Frameworks */,
-				E9738941CB4D784B904E9C7D /* libCIMLuaBindingFoundation.a in Frameworks */,
-				699179E4201E9D478B46735D /* libCIMLuaBindingCoreGraphics.a in Frameworks */,
+				E526A6644E02735F07A8C0EB /* libCIMLua.a in Frameworks */,
+				FECA620E83C2187D2AE6F4D8 /* libCIMLuaDebugServerIOS.a in Frameworks */,
+				3B809C4EDECCCED2FA09ABD8 /* MobileCoreServices.framework in Frameworks */,
+				119FBEB6E4AF69441ECBD0E8 /* ImageIO.framework in Frameworks */,
+				03892FF6390C425940FE9CE4 /* libCIMLuaBindingUIKit.a in Frameworks */,
+				5DA076FA0B5B52A7F99932CE /* UIKit.framework in Frameworks */,
+				C0DC482FDE0A89AF714EEF23 /* libCIMLuaBindingFoundation.a in Frameworks */,
+				86A150993B804BA74FBB7C3D /* CoreGraphics.framework in Frameworks */,
+				74EA6F573DD80ED968674B65 /* Foundation.framework in Frameworks */,
+				088E43D82F817A0A58C4BDC5 /* libCIMLuaBindingiOS.a in Frameworks */,
+				7796B1C9625BF8077FCE16EC /* libCIMLuaBindingCoreGraphics.a in Frameworks */,
+				394B8682788058B99FF18C14 /* libCIMLuaBindingCoreImage.a in Frameworks */,
+				DDD42FD54C9C38C425E800CD /* CoreImage.framework in Frameworks */,
+				62D7677D9EEF440FB2F4DD2B /* libCIMLuaBindingQuartzCore.a in Frameworks */,
+				6C8176D7CDDAFA82AA44720C /* QuartzCore.framework in Frameworks */,
+				114AB54E9876B7E48E4B306C /* libCIMLuaBindingTextKitSubclasses.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,16 +113,22 @@
 		FD32FCAE18FD07C700C14CE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD32FCAF18FD07C700C14CE6 /* Foundation.framework */,
-				FD32FCB118FD07C700C14CE6 /* CoreGraphics.framework */,
-				FD32FCB318FD07C700C14CE6 /* UIKit.framework */,
-				FD32FCD118FD07C700C14CE6 /* XCTest.framework */,
-				C9123CA54FF64102966645D6 /* MobileCoreServices.framework */,
-				4FBC01BC5B0B4AB6B661403B /* libCIMLua.a */,
-				874C44AB08414B89B6571401 /* libCIMLuaDebugServerIOS.a */,
-				E718AF2964FD2A58050C02CA /* libCIMLuaBindingUIKit.a */,
-				03BC384E1BA96B9D47A71DAA /* libCIMLuaBindingFoundation.a */,
-				AB58F264CE666FF652BC91A2 /* libCIMLuaBindingCoreGraphics.a */,
+				0CB4BB3177E82E216FFC3458 /* libCIMLua.a */,
+				23E9B51D4FE93590E7CBB59F /* libCIMLuaDebugServerIOS.a */,
+				0DF562B0BCE3F29717B20F17 /* MobileCoreServices.framework */,
+				D4D7654307A0B7F1430E6DE1 /* ImageIO.framework */,
+				BF46F97C3D7EADF6A95A4F33 /* libCIMLuaBindingUIKit.a */,
+				EF6F5B3E9E2E6F056DC63871 /* UIKit.framework */,
+				7A203273CC0E85DD6D3C2398 /* libCIMLuaBindingFoundation.a */,
+				9146AFB6496BF8CE40385243 /* CoreGraphics.framework */,
+				AD97B7612EDB3B551BC5234A /* Foundation.framework */,
+				4DC65D9F4372B6BCC257E713 /* libCIMLuaBindingiOS.a */,
+				BA93AA6A37AAD13D751ED9BA /* libCIMLuaBindingCoreGraphics.a */,
+				1FB4D535CDB052BB1A6BDCB5 /* libCIMLuaBindingCoreImage.a */,
+				1CD6F4402F38069DC96755A6 /* CoreImage.framework */,
+				40C9B53149C3D96A38551B62 /* libCIMLuaBindingQuartzCore.a */,
+				298C6FCF947B7C5F177BAF22 /* QuartzCore.framework */,
+				D945CA3FC84B083EF99E5287 /* libCIMLuaBindingTextKitSubclasses.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,8 +144,6 @@
 				FD32FCC818FD07C700C14CE6 /* ViewController.m */,
 				FD32FCF118FD441E00C14CE6 /* ColoringTextStorage.h */,
 				FD32FCF218FD441E00C14CE6 /* ColoringTextStorage.m */,
-				FD32FCEA18FD170300C14CE6 /* TexteMultilangue.rtf */,
-				FD32FCEF18FD32EF00C14CE6 /* LigneDeTexte.rtf */,
 				FD32FCCA18FD07C700C14CE6 /* Images.xcassets */,
 				FD32FCB618FD07C700C14CE6 /* Supporting Files */,
 			);
@@ -168,6 +188,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Celedev;
 			};
 			buildConfigurationList = FD32FCA718FD07C700C14CE6 /* Build configuration list for PBXProject "TextKitSubclasses" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -192,11 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD32FCEB18FD170300C14CE6 /* TexteMultilangue.rtf in Resources */,
 				FD32FCC618FD07C700C14CE6 /* Main_iPad.storyboard in Resources */,
 				FD32FCCB18FD07C700C14CE6 /* Images.xcassets in Resources */,
 				FD32FCC318FD07C700C14CE6 /* Main_iPhone.storyboard in Resources */,
-				FD32FCF018FD32EF00C14CE6 /* LigneDeTexte.rtf in Resources */,
 				FD32FCBA18FD07C700C14CE6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +280,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -300,7 +318,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -322,17 +339,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "TextKitSubclasses/TextKitSubclasses-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/include",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/headers",
-				);
+				HEADER_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/headers";
 				INFOPLIST_FILE = "TextKitSubclasses/TextKitSubclasses-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/60DF6A9A-41BE-41D7-A432-C1650E3AECD4/ExternalLibs/TextKitSubclasses.luabindings/BindingLibs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celedev.TextKitSubclasses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -343,17 +361,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "TextKitSubclasses/TextKitSubclasses-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/include",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/headers",
-				);
+				HEADER_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/headers";
 				INFOPLIST_FILE = "TextKitSubclasses/TextKitSubclasses-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-9-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/iphoneos/iOS-9.3-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/60DF6A9A-41BE-41D7-A432-C1650E3AECD4/ExternalLibs/TextKitSubclasses.luabindings/BindingLibs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celedev.TextKitSubclasses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

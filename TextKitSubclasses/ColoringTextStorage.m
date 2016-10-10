@@ -2,18 +2,14 @@
 //  ColoringTextStorage.m
 //  TextKitSubclasses
 //
-//  Created by Jean-Luc Jumpertz on 15/04/2014.
-//
 //
 
 #import "ColoringTextStorage.h"
 
-NSString *const TKDDefaultTokenName = @"TKDDefaultTokenName";
-
 @interface ColoringTextStorage ()
-
-@property NSMutableAttributedString* backingStore;
-@property (readonly) BOOL dynamicTextNeedsUpdate;
+{
+    NSMutableAttributedString* _backingStore;
+}
 
 @end
 

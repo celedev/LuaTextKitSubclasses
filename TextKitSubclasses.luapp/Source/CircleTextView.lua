@@ -5,12 +5,12 @@ local UIView = objc.UIView
 local NSTextStorage = objc.NSTextStorage
 local NSLayoutManager = objc.NSLayoutManager
 local NSTextContainer = objc.NSTextContainer
-
 local UIColor = objc.UIColor
 
 local CgContext = require "CoreGraphics.CGContext"
 local CgAffineTransform = require "CoreGraphics.CGAffineTransform"
 local UiGraphics = require "UIKit.UIGraphics"
+
 
 local CircleTextView = class.createClass("CircleTextView", UIView)
 
@@ -20,18 +20,19 @@ function CircleTextView:initWithFrame (frame)
     self.opaque = false
     self.userInteractionEnabled = false
     
-    self:addMessageHandler ("CircleTextView updated", "refresh")
+    self:addMessageHandler (CircleTextView, "setNeedsDisplay") -- calls `self:setNeedsDisplay()` when this module is changed
 end
 
-function CircleTextView:setText (attributedString)
+CircleTextView.text = property ()
+
+function CircleTextView:setText (attributedString) -- setter for the 'text' property
     
     if self.textContainer == nil then
         -- Create the text system for this view
         local textStorage = NSTextStorage:new()
         local layoutManager = NSLayoutManager:new()
         textStorage:addLayoutManager(layoutManager)
-        
-        -- Create a text storage with a very large width
+        -- Create a text container with a very large width, so that text layout produces a single line
         local textContainer = NSTextContainer:newWithSize(struct.CGSize(100000, 50))
         layoutManager:addTextContainer(textContainer)
         
@@ -41,6 +42,7 @@ function CircleTextView:setText (attributedString)
     end
        
     self.textStorage:setAttributedString(attributedString)
+    self:setNeedsDisplay ()
 end
 
 local startingAngle =  - math.pi / 3
@@ -63,7 +65,7 @@ function CircleTextView:drawRect(rect)
         
         local startOffset = 0
         
-        for repeatIndex = 1, 5 do
+        for repeatIndex = 1, 4 do
         
             -- Draw each glyph on the circle
             for glyphIndex = glyphRange.location, glyphRange:maxLocation() - 1 do
@@ -95,13 +97,5 @@ function CircleTextView:drawRect(rect)
         end
     end
 end
-
-CircleTextView:declareSetters { text = CircleTextView.setText }
-
-function CircleTextView:refresh ()
-    self:setNeedsDisplay()
-end
-
-message.post ("CircleTextView updated")
 
 return CircleTextView

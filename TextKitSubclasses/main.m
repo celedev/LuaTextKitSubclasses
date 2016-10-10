@@ -2,8 +2,8 @@
 //  main.m
 //  TextKitSubclasses
 //
-//  Created by Jean-Luc Jumpertz on 15/04/2014.
-//
+//  Created by Jean-Luc on 10/10/2016.
+//  Copyright (c) 2016 Celedev. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

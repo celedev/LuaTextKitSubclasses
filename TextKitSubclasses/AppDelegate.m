@@ -2,8 +2,6 @@
 //  AppDelegate.m
 //  TextKitSubclasses
 //
-//  Created by Jean-Luc Jumpertz on 15/04/2014.
-//
 //
 
 #import "AppDelegate.h"
@@ -20,15 +18,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Create _luaContext
-    _luaContext = [[CIMLuaContext alloc] initWithName:@"TextKitController"];
-    _luaContextMonitor = [[CIMLuaContextMonitor alloc] initWithLuaContext:_luaContext connectionTimeout:5.0];
+    _luaContext = [[CIMLuaContext alloc] initWithName:@"TextKitLuaContext"];
+    _luaContextMonitor = [[CIMLuaContextMonitor alloc] initWithLuaContext:_luaContext connectionTimeout:20.0 showWaitingMessage:YES];
     
     UIViewController* mainViewController = self.window.rootViewController;
     
     // Extend the internal classes in Lua
     [_luaContext loadLuaModuleNamed:@"ViewController" withCompletionBlock:^(id result) {
         if (result != nil) {
-            [(id<CIMLuaObject>)mainViewController promoteAsLuaObject];
+            [(id<CIMLuaObject>)mainViewController doLuaSetupIfNeeded];
         }
     }];
     

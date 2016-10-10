@@ -1,5 +1,4 @@
 -- Class extension of native class ViewController
-require "NSRangeMethods"
 
 local CGRect = struct.CGRect
 local UiView = require "UIKit.UIView"
@@ -15,7 +14,7 @@ function ViewController:viewDidLoad ()
     self:createTextViews()
 end
 
-function ViewController:promoteAsLuaObject()
+function ViewController:doLuaSetup()
     if self.isViewLoaded then
         self:createTextViews()
     end
@@ -23,10 +22,12 @@ end
 
 function ViewController:createTextViews()
     
-    -- Create the NSTextStorage
-    local textStorage = ColoringTextStorage:newWithFileURL_options_documentAttributes_error 
-                        (objc.NSBundle.mainBundle:URLForResource_withExtension("TexteMultilangue", "rtf"),
-                         {}, nil, nil)
+    -- Create the NSTextStorage and sets it with the content of the rtf resource "MultilingualText"
+    -- Note that textStorage content will be replaced (and edits in the text view will be lost) when the resource is changed
+    local textStorage = ColoringTextStorage:new()
+    textStorage:getResource ("MultilingualText", "rtf", function (self, attributedString)
+                                                            self:setAttributedString(attributedString)
+                                                        end)
     
     -- Create the NSLayoutManager
     local layoutManager = objc.NSLayoutManager:new()
@@ -56,8 +57,7 @@ function ViewController:createTextViews()
     self.view:addSubview(circleTextView)
     
     -- Set some text in the circle text view
-    circleTextView.text = objc.NSAttributedString:newWithFileURL_options_documentAttributes_error 
-                          (objc.NSBundle.mainBundle:URLForResource_withExtension("LigneDeTexte", "rtf"), {}, nil, nil)
+    circleTextView:getResource ('CircleTextString', 'text') -- subscribe to resource named 'CircleTextString' and update text when it changes 
 end
 
 return ViewController
