@@ -4,11 +4,13 @@ TextKitSimpleLayout is another TextKit-based application that illustrates advanc
 
 TextKitSimpleLayout is mixed Lua + Objective-C application, containing class extensions and class creations. It also illustrates the use of multiple return values in Lua when calling or overriding an ObjC methods with out parameter(s).
 
+This code sample is also available as a project template in CodeFlow.
+
 ## Configuration required
 
-A Mac with Celedev CodeFlow version 0.9.19 or greater installed.
+A Mac with Celedev CodeFlow version 1.0.2 or greater installed.
 
-Works on iPad (recommended) or iPhone, running iOS 7 or later.
+Works on iPad (recommended) or iPhone, running iOS 8.3 or later.
 
 ## How to use this code sample
 
@@ -19,11 +21,7 @@ Works on iPad (recommended) or iPhone, running iOS 7 or later.
 
 3. Run the application on a device or in the simulator.
 
-4. In CodeFlow, select the application in the `Target` popup menu in the project window toolbar. The app stops on a breakpoint at the first line of the Lua program.
-
-5. Click on the `Continue` button in the toolbar (or use the CodeFlow debugger for stepping in the program) 
-
-6. Enjoy the power of live coding with CodeFlow
+4. Enjoy the power of live coding with CodeFlow
 
 ## Troubleshooting
 
@@ -31,24 +29,11 @@ Works on iPad (recommended) or iPhone, running iOS 7 or later.
 
   **⇒ Fix**: open the corresponding CodeFlow project, and CodeFlow will update the associated Xcode project, so that paths and libraries are correctly set.
 
-- **Link errors (missing symbols) occur when I compile the Xcode project**
-
-  **Most probable cause**: if you are using Xcode 5 (and thus iOS 7.1 SDK), these errors occur because the sample app is configured for the default iOS 8 SDK.
-
-  **⇒ Fix**: In the CodeFlow project, use the bindings library for the iOS 7.1 SDK in replacement of the one for the iOS 8 SDK
-	- Download [CodeFlow bindings for iOS 7.1 SDK](https://www.celedev.com/en/support/#downloads), and double-click on the .luabindings library file to install it in codeFlow; 
-	- If needed, select the iOS 7.1 SDK library in CodeFlow project (menu `Program -> Select SDK Library -> iOS 7.1 SDK` or using the contextual menu on the current iOS External Lib);
-	- CodeFlow will then update the associated Xcode project so that it links with the iOS 7.1 SDK bindings libraries.
-
-## Changes
-
-- (25-09-2014) In RoundTextContainer, truncate calculated fragment origin and width to integer values and handle a few more  specific cases, so the text layout does not loop forever on some devices.
-
 ## License
 
 This application is provided under the MIT License (MIT)
 
-Copyright (c) 2014-2015 Celedev.
+Copyright (c) 2014-2016 Celedev.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
